@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice.exe</title>
+    <style>
+        .container {
+            width: fit-content;
+            height: 100vh;
+            margin: auto;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+
+            border: 1px solid #333;
+            border-radius: 5%;
+            background: #f0eaea;
+            box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.3);
+
+            display: inline-block;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .center {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: red;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .left-top {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #000;
+
+            position: absolute;
+            top: 10%;
+            left: 10%;
+        }
+
+        .right-bottom {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #000;
+
+            position: absolute;
+            bottom: 10%;
+            right: 10%;
+        }
+
+        .right-top {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #000;
+
+            position: absolute;
+            top: 10%;
+            right: 10%;
+        }
+
+        .left-bottom {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #000;
+
+            position: absolute;
+            bottom: 10%;
+            left: 10%;
+        }
+
+        .left {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #000;
+
+            position: absolute;
+            left: 10%;
+            top: 50%;
+            transform: translate(0%, -50%);
+        }
+
+        .right {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #000;
+
+            position: absolute;
+            right: 10%;
+            top: 50%;
+            transform: translate(0%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="center"></div>
+        </div>
+
+        <div class="box">
+            <div class="left-top"></div>
+            <div class="right-bottom"></div>
+        </div>
+
+        <div class="box">
+            <div style="background:#000;" class="center"></div>
+            <div class="left-top"></div>
+            <div class="right-bottom"></div>
+        </div>
+
+        <div class="box">
+            <div style="background: red;" class="left-top"></div>
+            <div style="background: red;" class="right-bottom"></div>
+            <div style="background: red;" class="right-top"></div>
+            <div style="background: red;" class="left-bottom"></div>
+        </div>
+
+        <div class="box">
+            <div style="background:#000;" class="center"></div>
+            <div class="left-top"></div>
+            <div class="right-bottom"></div>
+            <div class="right-top"></div>
+            <div class="left-bottom"></div>
+        </div>
+
+        <div class="box">
+            <div class="left-top"></div>
+            <div class="right-bottom"></div>
+            <div class="right-top"></div>
+            <div class="left-bottom"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+    </div>
+</body>
+
+</html>

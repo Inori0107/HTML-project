@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        text-align: center;
+      }
+
+      table {
+        margin: 1rem;
+        display: inline-block;
+      }
+
+      table,
+      tr,
+      td {
+        border: 1px solid #000;
+      }
+
+      table td {
+        width: 200px;
+        height: 200px;
+      }
+
+      #left_top {
+        background-color: crimson;
+      }
+      #top {
+        background-image: url("https://picsum.photos/200/200/?random=2");
+        background-repeat: no-repeat;
+      }
+      #right_top {
+        background-image: url("https://picsum.photos/50/50/?random=3");
+        background-repeat: repeat-x;
+        background-position: left top;
+      }
+      #left_center {
+        background: url("https://picsum.photos/50/50/?random=4") repeat-y left
+          top;
+      }
+      #center {
+        background: url("https://picsum.photos/50/50/?random=5") no-repeat
+          center;
+      }
+      #right_center {
+        background-color: #ffa;
+        background-image: url("https://picsum.photos/50/50/?random=6");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      #left_bottom {
+        background: url("https://picsum.photos/200/50/?random=7") no-repeat left
+            top,
+          url("https://picsum.photos/200/100/?random=8") no-repeat left 50px,
+          url("https://picsum.photos/200/50/?random=7") no-repeat left bottom;
+      }
+      #center_bottom {
+        background: linear-gradient(90deg, black, blue);
+      }
+      #right_bottom {
+        background: radial-gradient(black, white);
+      }
+    </style>
+  </head>
+
+  <body>
+    <table>
+      <tr>
+        <td id="left_top"></td>
+        <td id="top"></td>
+        <td id="right_top"></td>
+      </tr>
+      <tr>
+        <td id="left_center"></td>
+        <td id="center"></td>
+        <td id="right_center"></td>
+      </tr>
+      <tr>
+        <td id="left_bottom"></td>
+        <td id="center_bottom"></td>
+        <td id="right_bottom"></td>
+      </tr>
+    </table>
+  </body>
+</html>
